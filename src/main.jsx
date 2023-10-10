@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <AuthProvider>
+      <AuthProvider value={console.log("ContextoGlobal")} >
         <Routes />
       </AuthProvider>
     </ThemeProvider>
